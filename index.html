@@ -1,94 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
-    <style>
-        /* CSS styles go here */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-        }
-
-        header {
-            background-color:rgb(60, 108, 190);
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-        }
-
-        section {
-            padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        footer {
-            background-color:rgb(72, 67, 67);
-            color: #fff;
-            padding: 10px;
-            text-align: center;
-            position: absolute;
-            bottom: 0;
-            width: 100%;
-        }
-    </style>
+    <title>Webpage Design</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-
 <body>
-    <header>
-        <h1>JUSTICE MATE </h1>
-    </header>
 
-    <section>
-        <h2>We will lead you to the right destination</h2>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Corporis, molestias sunt quod et ducimus, voluptas praesentium deserunt eum in, autem hic eligendi obcaecati qui temporibus beatae labore sint quae id!</p>
-    </section>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <h2 class="logo">Justice Mate</h2>
+            </div>
 
-    <footer>
-        <p>&copy; 2024 Your Website Name. All rights reserved.</p>
-    </footer>
-</body>
+            <div class="menu">
+                <ul>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="#">SERVICE</a></li>
+                    <li><a href="#">HELPLINE </a></li>
+                    <li><a href="#">CONTACT </a></li>
+                </ul>
+            </div>
 
-</html>
+            <div class="search">
+                <input class="srch" type="search" name="" placeholder="Type To text">
+                <a href="#"> <button class="btn">Search</button></a>
+            </div>
 
-<!DOCTYPE html>
-<html lang="en">
+        </div> 
+        <div class="content">
+            <h1>Navigating the Path to <br><span>Peace & Justice</span> <br></h1>
+            <p class="par">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt neque 
+                 expedita atque eveniet <br> quis nesciunt. Quos nulla vero consequuntur, fugit nemo ad delectus 
+                <br> a quae totam ipsa illum minus laudantium?</p>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login and Search</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
+                <button class="cn"><a href="#">JOIN US</a></button>
 
-<body>
-    <div class="container">
-        <div id="login-form">
-            <h2>Login</h2>
-            <form id="loginForm">
-                <label for="username">Username:</label>
-                <input type="text" id="username" name="username" required>
-                
-                <label for="password">Password:</label>
-                <input type="password" id="password" name="password" required>
+                <div class="form">
+                    <h2>Login Here</h2>
+                    <input type="email" name="email" placeholder="Enter Email Here">
+                    <input type="password" name="" placeholder="Enter Password Here">
+                    <button class="btnn"><a href="#">Login</a></button>
 
-                <button type="button" onclick="login()">Login</button>
-            </form>
-        </div>
+                    <p class="link">Don't have an account<br>
+                    <a href="#">Sign up </a> here</a></p>
+                    <p class="liw">Log in with</p>
 
-        <div id="search-container">
-            <h2>Search Engine</h2>
-            <input type="text" id="searchInput" placeholder="Search...">
-            <button type="button" onclick="search()">Search</button>
+                    <div class="icons">
+                        <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-google"></ion-icon></a>
+                        <a href="#"><ion-icon name="logo-skype"></ion-icon></a>
+                    </div>
+
+                </div>
+                    </div>
+                </div>
         </div>
     </div>
-
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
 </body>
-
 </html>
