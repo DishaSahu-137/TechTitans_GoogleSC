@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Google Maps API Example</title>
+    <link rel="stylesheet" href="complaint.css">
+  </head>
+  <body>
+    <!-- Your website content goes here -->
+    <div class="form-body">
+      <h1 style="background-color: bisque;">Register Your Complaint</h1>
+      <form action="" id="form">
+      <div class="personal-data">
+       <h1 style="background-color: rgb(255, 174, 144);">Personal Details</h1>
+       <div class="form-item">
+      <label for="">Name</label>
+      <input type="text" required id="name" name="name" style="width: 280px;">
+       </div>
+       <div class="form-item">
+        <label for="">Gender</label>
+        <select name="Gender" id="Gender" style="width: 80px; height: 25px;">
+          <option value="">Male</option>
+          <option value="">Female</option>
+        </select>
+         </div>
+         <div class="form-item">
+          <label for="">Age</label>
+<input type="number" required id="age" name="age" style="width: 65px; ">
+ </div>
+ <div class="form-item">
+  <label for="">Address1</label>
+  <input type="text" required id="Address1" name="Address1" style="width: 280px;" >
+   </div>
+   <div class="form-item">
+    <label for="">Address2</label>
+    <input type="text" required id="Address2" name="Address2" style="width: 280px;">
+     </div>
+     <div class="form-item">
+      <label for="">Country</label>
+      <input type="text" required id="Country" name="Country" style="width: 280px;">
+       </div>
+       <div class="form-item">
+  <label for="">Pin</label>
+  <input type="text" required id="pin" name="pin" style="width: 280px;">
+  </div>
+  <div class="form-item">
+   <label for="">Place</label>
+   <input type="text" required id="Place" name="Place" style="width: 280px;">
+    </div>
+    <button type="button" onclick="getNearestPoliceStation()" style="width: 280px; cursor: pointer; height: 35px; background-color:rgb(167, 253, 167); font-weight: bold; border: none; border-radius: 20px;">Trace location of nearest police station</button>
+    <div id="map"></div>
+    <div class="policestation">
+      <p style="color: red;">Nearest Police Staion:</p>
+    </div>
+    <div class="form-item">
+     <label for="">Phone</label>
+     <input type="text" required id="Phone" name="Phone" style="width: 280px;">
+      </div>
+      <div class="form-item">
+       <label for="">Email</label>
+       <input type="text" required id="Email" name="Email" style="width: 280px;">
+        </div>
+      </div>
+      <div class="complaint-section" >
+        <h1 style="background-color: rgb(255, 174, 144);">Complaint</h1>
+        <div class="form-item">
+          <label for="">Title</label>
+          <input type="text" required id="Title" name="Title" style="width: 350px;">
+           </div>
+           <div class="form-item">
+            <label for="">Complaint</label>
+            <textarea name="" id="Description" cols="50" rows="8"></textarea>
+             </div>
+      </div>
+      <div class="submit">
+        <button type="button" >Register</button>
+        <button type="reset">Reset</button>
+      </div>
+      </form>
+    </div>
+      
+   <script src="complaint.js"></script>
+   <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyA0vv6WGZ9SJ2FsmMi0MHHRaL-zKVyK4VU&loading=async&callback=initMap"
+   ></script>
+  </body>
+</html>
