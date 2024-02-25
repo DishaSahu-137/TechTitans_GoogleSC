@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Victim Support</title>
+</head>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+    body{
+        height: 100vh;
+        /* background-image: url("https://www.monkhouselaw.com/wp-content/uploads/2017/10/workplace-misconduct-investigations-2.jpg"); */
+        background-size: cover; 
+    }
+   
+ .victim_support_System{
+    display: flex; 
+    height: 350px; 
+    position: relative;
+    top: 60px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}    
+    #victim_text{
+        width: 550px;
+        height: 60px;
+        border-radius: 30px;
+        padding-left: 20px;
+        overflow: scroll;
+        font-size: 15px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+    .head{
+        font-size: 50px;
+    }
+    .victim_support_form{
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+    }
+    .result button{
+     width: 150px;
+     height: 40px;
+     margin-right: 20px;
+     border-radius: 20px;
+     cursor: pointer;
+
+    } 
+    .analysis_result{
+      display: none;
+       margin-top: 30px;
+       text-align: center;
+    }
+    </style> 
+     <body> 
+ <div class="victim_support_System"> 
+     <h1 class="head">VICTIM SUPPORT DATABASE</h1> 
+     <p style="color: red;">Please provide detailed discription of a incident</p>
+     <form action="justice.php" method="post" class="victim_support_form"> 
+     <input type="text" id="victim_text" name="victim-Text" placeholder="share your incident">   
+     <div class="result"> 
+         <button id="submit" type="submit">Generate result</button> 
+         <button type="reset" id="reset">reset</button>    
+     </div> 
+     </form> 
+ </div>
+ <div class="analysis_result">
+    <h1>Analysis result</h1>
+    <div class="legal_laws">
+    
+    </div>
+ </div>
+ <script src="victim.js"></script>
+  </body> 
+   </html> 
